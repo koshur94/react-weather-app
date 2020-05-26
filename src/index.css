@@ -1,13 +1,175 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto Light", sans-serif;
+}
+
+.App {
+  background-image: url('./assets/main.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 1.5s ease;
+}
+
+.App.clearsky {
+  background-image: url('./assets/clearsky.jpg');
+}
+
+.App.overcastclouds {
+  background-image: url('./assets/overcastclouds.jpg');
+}
+
+.App.brokenclouds {
+  background-image: url('./assets/brokenclouds.jpg');
+}
+
+.App.moderaterain {
+  background-image: url('./assets/moderaterain.jpg');
+}
+
+.App.lightsnow {
+  background-image: url('./assets/lightsnow.jpg');
+}
+
+.App.scatteredclouds {
+  background-image: url('./assets/scatteredclouds.jpg');
+}
+
+.App.fog {
+  background-image: url('./assets/fog.jpg');
+}
+
+.App.showerrain {
+  background-image: url('./assets/showerrain.jpg');
+}
+
+.App.fewclouds {
+  background-image: url('./assets/fewclouds.jpg');
+}
+
+.App.lightrain {
+  background-image: url('./assets/lightrain.jpg');
+}
+
+.App.haze {
+  background-image: url('./assets/haze.jpg');
+}
+
+.App.mist {
+  background-image: url('./assets/mist.jpg');
+}
+
+.App.thunderstorm {
+  background-image: url('./assets/thunderstorm.jpg');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 20px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 20px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 20px 20px;
+  margin-top: -20px;
+
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.location-box .location {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  transition: 1.5s ease;
+}
+
+.location-box .date {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  padding-top: 10px;
+  transition: 1.5s ease;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  transition: 1.5s ease;
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  transition: 1.5s ease;
+}
+
+.weather-box .description {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.footer {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  transition: 1.5s ease;
+  display: block;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
